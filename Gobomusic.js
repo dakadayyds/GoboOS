@@ -4,8 +4,7 @@
   class Gobomusic{
       constructor(){
 	        this.musicPlayer=null;
-          this.musicCurrentime=0;
-          this.musicLong=0;
+
       }
     getInfo(){
       return {
@@ -98,13 +97,13 @@
       if(this.musicPlayer){
         this.musicPlayer.pause()
         this.musicPlayer=null;
-        this.musicLong=0;
-        this.musicCurrenttime=0;
       }
       
     }
     musicduration(){
-        return this.musicLong
+               if(this.musicPlayer){
+            return this.musicPlayer.duration;
+      }
     }
      musicCurrenttime(){
         if(this.musicPlayer){
