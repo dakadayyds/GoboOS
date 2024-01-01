@@ -22,7 +22,7 @@
 		                arguments: {
                       url:{
                         type:Scratch.ArgumentType.STRING,
-                        defaultvalue:"link"
+                        defaultValue:"link"
                       }
 		                        },
                 
@@ -64,7 +64,7 @@
 		                arguments: {
                       time:{
                         type:Scratch.ArgumentType.STRING,
-                        defaultvalue:"0"
+                        defaultValue:"0"
                       }
 		                        },
                 
@@ -104,6 +104,7 @@
                if(this.musicPlayer){
             return this.musicPlayer.duration;
       }
+	    return 0;
     }
      musicCurrenttime(){
         if(this.musicPlayer){
